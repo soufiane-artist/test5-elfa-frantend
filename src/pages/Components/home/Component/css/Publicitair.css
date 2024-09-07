@@ -1,0 +1,96 @@
+.Publiciter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 55px;
+}
+.Publiciter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+}
+.Publiciter-container-header{
+    width: 94%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Publications-posts{
+    width: 100%;
+    padding: 0px 0 0 5px;
+    display: flex;
+    align-items: center;
+    overflow-x:scroll;
+    flex-wrap: nowrap; 
+
+}
+.Publications-post{
+    flex: 0 0 auto; /* يمنع العناصر من التوسع خارج العرض المحدد لها */
+    height: 250px;
+    display: flex;
+}
+.Publications-post-container{
+    background: linear-gradient(to left,rgba(0, 0, 255, 0.075),rgba(0, 0, 0, 0.589)),url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwKk5SPEQek9W_tg3_1W-N2_jOqcrYMZpjuw&s);
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+    margin: 5px 5px 10px 5px;
+    width: 300px;
+    padding: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.Publications-post-price{
+    background-color: whitesmoke;
+    width: fit-content;
+    padding: 2px 5px;
+    border-radius: 10px;
+    background-color: #398169;
+}
+.Publications-post-price h3{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 0;
+}
+.Publications-post-price h3 span{
+    color: white;
+}
+.Publications-post-info{
+    display: flex;
+    align-items: end;
+    height:90%;
+}
+.Publications-post-info-text{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.Publications-post-info-text h3{
+    color: white;
+    font-family: sans-serif;
+    margin-top: 15px;
+    font-size: 18px;
+}
+.Publications-post-info-text p{
+    margin-top: auto;
+    font-family:sans-serif;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 0;
+}
+.Publications-post-info-btn{
+    background-color: yellow;
+    padding: 5px 8px;
+    border-radius: 12px;
+    font-weight: 600;
+    border: none;
+    margin-left: auto;
+    height: 30px;
+}
+.Post-Comp-container-img{
+    max-height: 400px;
+    min-height: 200px;
+}

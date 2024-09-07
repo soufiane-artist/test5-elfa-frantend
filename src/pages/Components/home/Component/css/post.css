@@ -1,0 +1,260 @@
+.Post-Comp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 5px;
+    flex-direction: column;
+    gap: 8px;
+}
+.Post-Comp-container{
+    width: 95%;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 43, 0.356);
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.055) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.Post-Comp-container-profile{
+    height: 45px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.Post-Comp-container-profile-img{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Post-Comp-container-profile-img h2{
+    position: absolute;
+    bottom:-6px;
+    right: -5px;
+    font-size: 20px;
+    color: #398169;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Post-Comp-container-profile-img img{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #398169;
+    object-fit: cover;
+    object-position: center;
+}
+.Post-Comp-container-profile-btn {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+}
+.Post-Comp-container-profile-text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Post-Comp-container-profile-text h4{
+    color: #398169;
+    text-decoration: underline;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.Post-Comp-container-profile-text p{
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: #6b6b6b;
+}
+.Post-Comp-container-profile-btn button{
+    background-color: rgb(231, 231, 231);
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+.Post-Comp-container-img {
+    position: relative;
+    background: #f0f0f0;
+    animation: imgBack 2s infinite;
+}
+@keyframes imgBack{
+    0%{
+        background: white;
+    }
+    50%{
+        background: #eeeeee;
+    }
+    100%{
+        background: white;
+    }
+}
+.Post-Comp-container-img img{
+    width: 100%;
+    max-height: 400px;
+    min-height: 200px;
+    min-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: url(https://res.cloudinary.com/dvivzto6g/image/upload/v1725657781/dxfmg38qtmbghp0zlylc.png);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.Post-Comp-container-img-views{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    position: absolute;
+    width: 92%;
+    display: flex;
+}
+.Post-Comp-container-img-views h3{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: rgb(95, 95, 95);
+    margin-right: 10px;
+    gap: 5px;
+}
+.Post-Comp-container-img-views h3 span{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: black;
+}
+.Post-Comp-container-img-views  h4{
+    background-color: white;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(219, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    left: -20px;
+}
+.Post-Comp-container-price{
+    width: 100%;
+    display: flex;
+    direction: ltr;
+    margin-top: 8px;
+    justify-content: space-between;
+}
+.Post-Comp-container-price h6{
+    background-color: #398169;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+.Post-Comp-container-price h5{
+    background-color: rgb(255, 255, 0);
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 2px 5px;
+    font-size: 15px;
+}
+.Post-Comp-container-description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 2px;
+}
+.Post-Comp-container-description-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Post-Comp-container-description-title h6{
+    font-size: 16px;
+    text-decoration: underline;
+}
+.Post-Comp-container-description-title h5{
+    font-size: 12px;
+    color: #6b6b6b;
+    text-decoration: underline;
+}
+.Post-Comp-container-description-text{
+    width: 100%;
+}
+.Post-Comp-container-description-text p {
+    font-size: 14px;
+    width: 100%;
+}
+.Post-Comp-container-buy{
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+.Post-Comp-container-buy button{
+    font-family: "Cairo", sans-serif;
+    height: 35px;
+    width: 60%;
+    border-radius: 5px;
+    border: none;
+    color: #398169;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 90%;
+    border: 1px solid rgb(180, 180, 180);
+}
+.Post-Comp-container-buy button:hover{
+    color: white;
+    background-color: #398169;
+}
+.Post-Comp-container-buy h2{
+    margin-bottom: 0;
+    display: flex;
+    height: 35px;
+    align-items: center;
+    background-color: rgb(236, 236, 236);
+    color: #398169;
+    padding: 0 5px;
+    border-radius: 4px;
+    border: 1px solid rgb(180, 180, 180);
+    rotate: 180deg;
+}
+.Post-Comp-container-buy h2:hover{
+    color: white;
+    background-color: #398169;
+}

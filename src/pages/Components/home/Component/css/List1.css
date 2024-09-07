@@ -1,0 +1,53 @@
+.Liste-peintures-moyennes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Liste-peintures-moyennes h4{
+    color: rgb(99, 99, 99);
+    text-decoration: underline;
+    margin-top: 5px;
+}
+.Liste-peintures-moyennes-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+.Liste-peintures-moyennes-card-img img{
+    height: 180px;
+    width: 160px;
+    object-fit: cover;
+    object-position: center;
+    background-color: white;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 5px;
+}
+.Liste-peintures-moyennes-card-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Liste-peintures-moyennes-card-price h2{
+    font-size: 16px;
+    margin: 0;
+    width: 96%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    color: #398169;
+}
+.Liste-peintures-moyennes-card-price h2 span{
+    color: rgb(129, 129, 129);
+}
+.Liste-peintures-moyennes-card h5{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    margin: auto;
+    width: 96%;
+}

@@ -1,0 +1,41 @@
+.Categories{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Categories-container{
+    width: 94%;
+}
+.Categories-container-header{
+    display: flex;
+    justify-content: space-between;
+}
+.Categories-container-cards{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    max-width: 100%;
+    overflow-x: auto;
+    padding: 0 0 5px 0;
+}
+.Categories-container-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5px;
+}
+.Categories-container-card img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+.Categories-container-card h6{
+    font-family: sans-serif;
+    font-size: 15px;
+}

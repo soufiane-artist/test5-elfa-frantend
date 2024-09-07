@@ -1,0 +1,29 @@
+.loading{
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: WHITE;
+    z-index: 2;
+}
+.loading img {
+    opacity: 0.1;
+    height: 25%;
+    animation: loading 2s ;
+}
+@keyframes loading{
+    25%{
+        opacity:0.5 ;
+    }
+    50%{
+        opacity:1 ;
+    }
+    100%{
+        opacity:0;
+    }
+}

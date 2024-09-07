@@ -1,0 +1,172 @@
+.LoginPhone{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    animation: LoginPhone 1s forwards ;
+    filter: blur(5px);
+    direction: rtl;
+}
+@keyframes LoginPhone{
+    100%{
+        filter: blur(0px);
+    }
+}
+.LoginPhone img{
+    height: 230px;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+    display: none;
+    border-radius: 0% 0% 50%;
+    box-shadow: rgba(85, 85, 85, 0.35) 0px 5px 15px;
+}
+.LoginPhone-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15%;
+    height: 60%;
+}
+.LoginPhone-title img{
+    height: 100px;
+    position: fixed;
+    right: 0px;
+    top: 30%;
+    background-color: transparent;
+    box-shadow:none;
+    rotate: -90deg;
+}
+.LoginPhone-title h3{
+    color: #398169;
+    font-size: 32px;
+    margin: 0;
+    margin-top: 5px;
+    text-align: center;
+}
+.LoginPhone-title h4{
+    color: rgb(100, 100, 100);
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+}
+.LoginPhone-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 86%;
+}
+.LoginPhone-input{
+    background-color: #3981694f;
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    gap: 8px;
+}
+.LoginPhone-input h2{
+    font-size: 18px;
+    margin: 0;
+}
+.LoginPhone-input input{
+    width: 88%;
+    height: 45px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.LoginPhone-input input::placeholder{
+    color: #0b38299c;
+    font-size: 15px;
+    font-weight: 600;
+}
+.LoginPhone-Forgat-pass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.LoginPhone-Forgat-pass h2{
+    font-size: 15px;
+    color: rgb(109, 109, 109);
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.LoginPhone-Forgat-pass h2 span{
+    color: #28614e;
+}
+.LoginPhone-btn{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 15px;
+    gap: 12px;
+}
+.LoginPhone-btn button{
+    height: 45px;
+    background-color: #398169;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.LoginPhone-btn button:hover{
+    background-color: #5db195;
+}
+.LoginPhone-btn h2{
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+.LoginPhone-btn h2 span{
+    color: #28614e;
+    text-decoration: underline;
+}
+.RegisterPhone{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    filter: blur(5px);
+    animation: LoginPhone 1s forwards ;
+    direction: rtl;
+}
+hr{
+    width: 90%;
+    height: 1px;
+    background-color: #000c08;
+}
+@media (max-width: 600px){
+    .LoginPhone{
+        width: 100%;
+    }
+    .LoginPhone img{
+        display: flex;
+    }
+    .LoginPhone-container{
+        margin-top: 5px;
+        height: auto;
+    }
+    .RegisterPhone{
+        width:100%;
+    }
+}

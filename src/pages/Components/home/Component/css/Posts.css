@@ -1,0 +1,43 @@
+
+.Posts{
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    direction: rtl;
+}
+.CreatePost-header{
+    position:fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.CreatePost-container{
+
+    padding-top: 50px;
+}
+.Posts-container{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:45px ;
+    padding-bottom: 15px;
+}
+.Posts-images{
+    width: fit-content;
+    width: 96%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.Posts-images img{
+    width: 33%;
+    height: 120px;
+    object-fit: cover;
+    object-position: center;
+}

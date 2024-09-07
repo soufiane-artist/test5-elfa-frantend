@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.PostDetails{
+    min-height: 100vh;
+    background-color: rgb(248, 248, 248);
+    padding: 0 0 80px 0;
+    direction: rtl;
+}
+.PostDetails-container{
+    margin-top: 50px;
+}
+.PostDetails-container-img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.PostDetails-container-img img{
+    width: 100%;
+    max-height: 80vh;
+    clip-path: polygon(100% 0, 100% 100%, 98% 100%, 9% 98%, 0 100%, 0 0);
+}
+
+.PostDetails-container-arrow{
+    width: 94%;
+    position: absolute;
+    top: 45px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+.PostDetails-container-arrow h4{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    width: fit-content;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: rgb(63, 63, 63);
+}
+.PostDetails-container-arrow h4 span{
+    font-size: 18px;
+    color: rgb(63, 63, 63);
+}
+.PostDetails-container-arrow h4:hover{
+    background-color: rgba(240, 248, 255, 0.452);
+    width: fit-content;
+    border-radius: 5px;
+}
+.PostDetails-container-tablaux-details{
+    padding: 15px 20px;
+}
+.PostDetails-container-tablaux-details h3{
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.PostDetails-container-tablaux-details h4{
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    text-transform: capitalize;
+    gap: 3px;
+}
+.PostDetails-container-tablaux-details h4 span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+}
+.PostDetails-container-tablaux-details-price{
+    display: flex;
+}
+.PostDetails-container-tablaux-details-price-left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0 15px;
+}
+
+.PostDetails-container-tablaux-details-price-left-icon h6{
+    font-size: 32px;
+}
+.PostDetails-container-tablaux-details-price-left-price {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.PostDetails-container-tablaux-details-price-left-price h5{
+    font-size: 15px;
+    margin: 0;
+    color: rgb(92, 92, 92);
+}
+.PostDetails-container-tablaux-details-price-left-price h4{
+    margin: 0;
+    font-weight: 700;
+}
+.PostDetails-container-tablaux-details-price-rigth{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.PostDetails-container-tablaux-details-price-rigth-icon h6{
+    font-size: 32px;
+}
+.PostDetails-container-tablaux-details-price-rigth-price {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.PostDetails-container-tablaux-details-price-rigth-time h5{
+    font-size: 15px;
+    margin: 0;
+    color: rgb(92, 92, 92);
+}
+.PostDetails-container-tablaux-details-price-rigth-time h4{
+    margin: 0;
+    font-weight: 700;
+}
+.PostDetails-container-decription{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.PostDetails-container-decription h5{
+    width: 90%;
+}
+.postDetails-container-decription-container{
+    width: 92%;
+}
+.PostDetails-container-decription h6{
+    font-size: 17px;
+}
+.PostDetails-container-decription-text p{
+    color: rgb(77, 77, 77);
+}
+.postDetails-top-name-details{
+    width: fit-content;
+    height: 28px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.bar-comander{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(245, 245, 245);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    padding: 8px;
+}
+.bar-comander-jadore{
+    background-color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.185) 0px 5px 15px;
+}
+.bar-comander-jadore h4{
+    font-size: 24px;
+    border-radius: 18px;
+    color: red;
+}
+.bar-comander-btn{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+.bar-comander-btn button{
+    width: 90%;
+    font-family: "Cairo", sans-serif;
+    font-size: 20px;
+}
+.btn-edit-post{
+    padding: 5px;
+    position: fixed;
+    bottom: 86%;
+    right: 10px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 24%;
+    z-index: 2;
+}   
+.btn-edit-post h6{
+    color: white;
+    font-size: 24px;
+}
+.PostDetails-container-pluse-works{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.PostDetails-container-pluse-works-container{
+    background-color: bisque;
+    display: flex;
+    width: 94%;
+}
+.PostDetails-container-pluse-works-post{
+    display: flex;
+    background-color: rgb(93, 139, 139);
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.178) 0px 5px 15px;
+    align-items: center;
+    border-radius: 8px;
+    gap: 8px;
+}
+.PostDetails-container-pluse-works-post img{
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 24%;
+}
+.PostDetails-container-pluse-works-post-text{
+    display: flex;
+    flex-direction: column;
+}
+.PostDetails-container-pluse-works-post-text h5{
+    margin: 0;
+    text-transform: capitalize;
+}
+.PostDetails-container-pluse-works-post-text h6{
+    color: rgb(97, 97, 97);
+}
+.PostDetails-container-pluse-works-post-btn{
+    margin-right: auto;
+}
+.PostDetails-container-pluse-works-post-btn button{
+    height: 45px;
+    width: 80px;
+    border-radius: 5px;
+    border: 1px solid rgb(138, 135, 135);
+    font-weight: 600;
+}
+.PostDetails-container-pluse-works-post-btn button:hover{
+    background-color: rgb(255, 255, 255);
+}

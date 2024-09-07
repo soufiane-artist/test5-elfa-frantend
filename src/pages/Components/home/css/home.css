@@ -1,0 +1,35 @@
+.home{
+    background: #fcfff5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+}
+.home-con{
+    width: 60%;
+}
+*{
+ margin: 0;   
+}
+@media (max-width: 600px){
+    .home-con{
+        width: 100%;
+    }
+}
+.create-new-post-icon{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: aqua;
+    z-index: 1;
+    background-color: rgb(12, 69, 224);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.create-new-post-icon h2{
+    color: white;
+    margin: 0;
+    margin: 5px;
+}
