@@ -170,3 +170,16 @@ hr{
         width:100%;
     }
 }
+.top-website{
+    width: 100%;
+    background-color: yellow;
+    padding: 4px;
+    position: fixed;
+    border-bottom: 1px solid rgb(187, 175, 7);
+    top: 0;
+}
+.top-website h2{
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}

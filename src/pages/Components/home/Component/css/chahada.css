@@ -1,0 +1,88 @@
+.Chahada-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 65px;
+}
+.Chahada-container img{
+    width: 170px;
+    background-color: rgb(224, 224, 224);
+}
+.Chahada-container h4{
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+.Chahada-container img:hover{
+    scale: 0.9;
+}
+.Chahadasend {
+
+}
+.Chahadasend-container{
+    width: 90%;
+    margin: auto;
+    margin-top: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Chahadasend-container img{
+    width: 200px;
+}
+.Chahadasend-text{
+    margin-top: 30px;
+    direction: rtl;
+}
+.Chahadasend-text h2{
+    font-size: 15px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border: 1px solid rgb(165, 165, 165);
+    padding: 5px;
+    color: rgb(88, 88, 88);
+}
+.Chahadasend-text-inp{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Chahadasend-text-inp h4{
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.Chahadasend-text-inp input{
+    width: 100%;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding: 5px;
+}
+.Chahadasend-btn{
+    margin-top: 15px;
+}
+.Chahadasend-btn p {
+    font-size: 15px;
+    color: rgb(63, 63, 63);
+    background-color: aliceblue;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.certificate-info-h6{
+    margin-top: 15px;
+    text-decoration: underline;
+    font-weight:700;
+}
+.certificate-info{
+    font-size: 15px;
+    color: rgb(105, 105, 105);
+}

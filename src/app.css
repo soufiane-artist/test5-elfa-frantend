@@ -1,0 +1,65 @@
+.pc-app-loading{
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOVCguXrg_h5xV7pHCRgguTPVwCBRJdDvPMCFvKxZBkwJ2kbbpyDtOv6OPF4ti4LbBBlc&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+}
+.pc-app-loading-container{
+    backdrop-filter: blur(15px);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pc-app-center{
+    height: fit-content;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(1, 78, 1);
+    width: 80%;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.185) 0px 5px 15px;
+    background-color: rgba(255, 255, 255, 0.849);
+}
+.pc-app-center h2{
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 15px;
+    width: 40%;
+}
+.pc-app-center h2 span{
+    font-size: 50px;
+    font-weight: 800;
+    color: #C3A35C;
+    text-decoration: underline;
+}
+#img-rotate{
+    position: absolute;
+    height: 500px;
+    top: -200px;
+    left: -200px;
+    animation: artPp 50s linear infinite;
+}
+@keyframes artPp{
+    100%{
+        rotate: 360deg;
+    }
+}
+@media (max-width: 720px){
+    .pc-app-center img{
+        width: 200px;
+    }
+}

@@ -1,0 +1,20 @@
+.image-prof{
+    height: 100vh;
+    background-color: rgba(75, 75, 75, 0.247);
+    backdrop-filter: blur(15px);
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-prof img{
+    max-width:90%;
+    max-height: 90vh;
+    border-radius: 5px;
+    border: 1px solid rgb(88, 88, 88);
+    background-color: white;
+}

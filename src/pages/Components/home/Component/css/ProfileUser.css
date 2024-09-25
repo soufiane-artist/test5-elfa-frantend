@@ -3,7 +3,7 @@
     direction: rtl;
 }
 .ProfileUser-container-img{
-    background: linear-gradient(to top,rgba(0, 0, 0, 0.432),rgba(0, 0, 0, 0)),url(https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3JtMjA4YmF0Y2gxNS1leWUtMDEuanBn.jpg);
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.432),rgba(0, 0, 0, 0)),url(https://media.istockphoto.com/id/532343936/vector/vector-background-with-tropical-leaves.jpg?s=170667a&w=0&k=20&c=NSNVEwNSVQlDK1ziNxdtdqS-4lb9eRY58T8T8uvEOl4=);
     display: flex;
     background-position: center;
     background-size: cover;
@@ -33,6 +33,7 @@
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
+    cursor: pointer;
 
 }
 .ProfileUser-container-img-img h2{
@@ -46,6 +47,7 @@
     border-radius: 50%;
     left: 30px;
     bottom: 30px;
+    cursor: pointer;
 }
 .ProfileUser-container-img-name{
     margin-bottom: 15px;
@@ -130,7 +132,7 @@
     flex-direction: column;
 }
 .ProfileUser-container-trend-post img{
-    height: 120px;
+    height: 149px;
     width: 100px;
     border-radius: 5px;
     border: 1px solid black;
@@ -138,6 +140,7 @@
     object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.281) 0px 5px 15px;
     object-position: center;
+    cursor: pointer;
 }
 .ProfileUser-container-trend-post h2{
     width: 96%;
@@ -148,6 +151,12 @@
     display: flex;
     gap: 10px;
     margin: 10px 0 10px 0; 
+}
+.ProfileUser-container-trend-post-images img{
+    border: 1px solid rgb(124, 124, 124);
+    background-color: rgb(240, 240, 240);
+    background-position: center;
+    background-size: cover;
 }
 .ProfileUser-container-trend-post p{
     width: 96%;

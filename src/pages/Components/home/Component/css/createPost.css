@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&display=swap');
 
 .CreatePost{
-    background-color: #f8f8f8;
+    background-color: #ffffff;
     direction: rtl;
     font-family: "Fustat", sans-serif;
     font-optical-sizing: auto;
@@ -18,9 +18,11 @@
 }
 .CreatePost-header img{
     height: 30px;
+    cursor: pointer;
 }
 .CreatePost-header h2{
     color: #8d8d8d;
+    cursor: pointer;
 }
 .CreatePost-header h3{
     color: #8d8d8d;
@@ -35,7 +37,6 @@
 .CreatePost-Img{
     width: 90%;
     background-color: #398169;
-    height: 200px;
     margin: auto;
     margin-top: 15px;
     display: flex;
@@ -45,11 +46,23 @@
     border-radius: 5px;
     position: relative;
 }
-.CreatePost-Img img{
-    height: 50px;
-    position: absolute;
+.CreatePost-Img #imageFile{
+    border-radius: 5px;
     opacity: 0.1;
-    height: 80%;
+    object-fit: cover;
+    height: 150px;
+    object-position: center;
+}
+.CreatePost-Img #file{
+    border-radius: 5px;
+    opacity: 1;
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+}
+.CreatePost-Img h2{
+    position: absolute;
+
 }
 .CreatePost-Img:hover{
     background-color: #488a74;
@@ -107,4 +120,42 @@
 }
 .CreatePost-button button{
     background-color: #398169;
+}
+.CreatePost-header .notification{
+    position: relative;
+}
+.CreatePost-header .notification span{
+    position: absolute;
+    font-size: 14px;
+    background-color: red;
+    padding: 2px;
+    color: white;
+    border-radius: 25%;
+}
+.verfication-account{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    gap: 15px;
+}
+.verfication-account h6{
+    margin: 0;
+    color: white;
+    background-color: #116EF6;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+#bottom-header{
+    background: linear-gradient(to top,rgba(0, 0, 0, 0.075),rgb(241, 241, 241));
+    width: 96%;
+    font-size: 15px;
+    margin: auto;
+    border-radius: 12px;
+    margin-top: 16px;
+    color: #616161;
+    padding: 10px;
+    border: 1px solid rgb(131, 131, 131);
+    cursor: pointer;
 }

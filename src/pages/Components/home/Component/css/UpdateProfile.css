@@ -1,0 +1,32 @@
+.UpdateProfile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.UpdateProfile-container{
+    margin-top: 60px;
+    direction: rtl;
+    width: 95%;
+}
+.UpdateProfile-container button{
+    margin: 15px 0;
+}
+.UpdateProfile-container .input-update-prof textarea{
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    min-height: 100px;
+    border-radius: 5px;
+}
+.UpdateProfile-container .input-update-prof h6{
+    color: rgb(105, 105, 105);
+}
+.UpdateProfile-container .input-update-prof input{  
+    background-color: rgb(238, 238, 238);
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 45px;
+    outline: none;
+    padding: 0 5px;
+}   

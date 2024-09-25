@@ -1,0 +1,124 @@
+.TalabTaloux-container {
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.TalabTaloux-container-img{
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    border-radius: 8px;
+    border: 1px solid rgb(128, 128, 128);
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 0;
+    margin-bottom: 10px;
+}
+.TalabTaloux-container-img h4{
+    text-decoration: underline;
+    font-size: 19px;
+    font-weight: 700;
+}
+.TalabTaloux-container-img img{
+    width: 96%;
+    background-color: white;
+    min-height: 150px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+.TalabTaloux-container-img h2{
+    font-weight: 600;
+    font-size: 16px;
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+}
+.TalabTaloux-container-img h2 span{
+    font-weight: 700;
+}
+.TalabTaloux-container-profile{
+    display: flex;
+    direction: rtl;
+    width: 96%;
+    align-items: center;
+    gap: 6px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 5px;
+    border: 1px solid rgb(83, 83, 83);
+    position: relative;
+}
+
+.TalabTaloux-container-profile img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(95, 95, 95);
+    border-radius: 50%;
+    min-height: auto;
+    margin: 0;
+    object-fit: cover;
+    object-position: center;
+}
+.TalabTaloux-container-img h1{
+    font-size: 14px;
+    color: white;
+    padding: 5px;
+    border-radius: 6px;
+    font-weight: 600;    
+}
+.TalabTaloux-container-img li{
+    direction: rtl;
+    width: 94%;
+    text-align: start;
+    font-size: 14px;
+}
+.TalabTaloux-container-img li span{
+    font-size: 19px;
+}
+.TalabTaloux-container-profile h6{
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    position: absolute;
+    font-size: 20px;
+    bottom: 0;
+}
+.TalabTaloux-container-profile-text h4{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+}
+.TalabTaloux-container-profile-text p{
+    margin: 0;
+    font-size: 12px;
+}
+.number-user{
+    border: 1px solid rgb(170, 170, 170);
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px ;
+    font-weight: 700;
+}
+.number-user span{
+    display: flex;
+}
+#whtsadmin{
+    direction: rtl;
+    width: 90%;
+    font-size: 14px;
+    background-color: rgb(238, 238, 238);
+    margin: auto;
+    margin-top: 19px;
+    padding: 5px;
+    border: 1px solid rgb(109, 109, 109);
+    border-radius: 5px;
+}

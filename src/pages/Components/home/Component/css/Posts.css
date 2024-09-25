@@ -35,9 +35,18 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.Posts-images img{
-    width: 33%;
-    height: 120px;
+.posts-container-card{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.posts-container-card img{
+    width: 96%;
+    max-height: 500px;
     object-fit: cover;
+    margin: 5px;
     object-position: center;
+    border-radius: 12px;
 }

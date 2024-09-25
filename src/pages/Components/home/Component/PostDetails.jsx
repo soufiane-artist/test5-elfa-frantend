@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MdArrowBackIos } from "react-icons/md";
 import './css/postDestails.css'
 import { FaCheckCircle } from "react-icons/fa";
@@ -7,16 +7,44 @@ import { IoTime } from "react-icons/io5";
 import { FaEye } from "react-icons/fa";
 import { FaHeart } from "react-icons/fa";
 import { RiEdit2Fill } from "react-icons/ri";
-import {Link} from 'react-router-dom'
+import {Link, useNavigate, useParams} from 'react-router-dom'
 import { IoIosArrowForward } from "react-icons/io";
+import axios from 'axios';
+import Post from './Post';
+import { RiSecurePaymentFill } from "react-icons/ri";
+import { BsCashCoin } from "react-icons/bs";
+import { GrSecure } from "react-icons/gr";
+import { GiPayMoney } from "react-icons/gi";
+import { MdVerified } from "react-icons/md";
+import List1 from './List1';
+import {ColorRing} from 'react-loader-spinner'
 
 
-function PostDetails() {
+function PostDetails({user,posts,setArrivale}) {
 
+  
+
+  const [postDetail,setPostDetail] = useState()
+  const navigate = useNavigate()
+  const {postId} = useParams()
 
   useEffect(()=>{
-    window.scroll(0,0)
-  },[])
+    if(postId){
+      const getAllPosts = async()=>{
+        await axios.get('//localhost:2002/api/auth/post/'+postId).then((res)=>{
+          setPostDetail(res.data)
+          setArrivale(res.data)
+        })
+      }
+      getAllPosts()
+    }
+  },[postId])
+  
+//${process.env.REACT_APP_API_URL}/api/auth/post/
+
+useEffect(() => {
+  window.scroll(0, 0);
+}, [postId]);
 
   return (
     <div className="PostDetails">
@@ -24,34 +52,49 @@ function PostDetails() {
               <Link to={-1}>
               <h2><IoIosArrowForward /></h2>
               </Link>
-                <h3>المنشورات</h3>
-                <img id='imglogo' src="./logo-elfanane.png" alt="" />
+                <h3>تفاصيل اللوحة</h3>
+                <Link to={'/'}>
+                <img id='imglogo' src="http://res.cloudinary.com/dvivzto6g/image/upload/v1726327800/ikzcmqayqhrjgpxluw6v.png" alt="" />
+                </Link>
             </div>
         <div className="PostDetails-container">
           <div className="PostDetails-container-img">
-            <img src="https://img.freepik.com/premium-photo/painting-mountain-landscape-with-mountain-background_852651-64.jpg" alt="" />
+        {!postDetail &&   <h2 className='text-center' > <ColorRing
+                        visible={true}
+                        height="30"
+                        width="30"
+                        ariaLabel="color-ring-loading"
+                        wrapperStyle={{}}
+                        wrapperClass="color-ring-wrapper"
+                        colors={['black', 'black', 'black', 'black', 'black']}
+                        /> </h2>}
+            <img src={postDetail?.image.url} alt="" />
           </div>
           <div className="PostDetails-container-tablaux-details">
-              <h3>art classic hada</h3>
-              <h4>soufiane moutaouakil <span className='text-success'><FaCheckCircle/></span> </h4>
+              <h3>{postDetail?.title} <span>{postDetail?.views} 👁</span></h3>
+              <Link to={'/'+postDetail?.user?.username.replace(/ /g, "_")}>
+              <h4>{postDetail?.user?.username} 
+                {postDetail?.user?.isAccountVerified && <span className='text-primary'><FaCheckCircle/></span> }
+              </h4>
+              </Link>
           </div>
           <div className="PostDetails-container-tablaux-details-price col-12">
-            <div className="PostDetails-container-tablaux-details-price-left col-6">
-                <div className="PostDetails-container-tablaux-details-price-left-icon">
-                  <h6><RiMoneyDollarCircleFill/></h6>
-                </div>
-                <div className="PostDetails-container-tablaux-details-price-left-price">
-                  <h5>ثمن اللوحة</h5>
-                  <h4>450 درهم</h4>
-                </div>
-            </div>
+              <div className="PostDetails-container-tablaux-details-price-left col-6">
+              <div className="PostDetails-container-tablaux-details-price-left-icon">
+                <h6><RiMoneyDollarCircleFill/></h6>
+              </div>
+              <div className="PostDetails-container-tablaux-details-price-left-price">
+                <h5>ثمن اللوحة</h5>
+                <h4>{postDetail?.price ? postDetail?.price : "0.00"} درهم</h4>
+              </div>
+          </div>
             <div className="PostDetails-container-tablaux-details-price-rigth col-6">
             <div className="PostDetails-container-tablaux-details-price-rigth-icon">
               <h6><IoTime/></h6>
             </div>
             <div className="PostDetails-container-tablaux-details-price-rigth-time">
             <h5>تاريخ الإنشاء </h5>
-            <h4 className='text-success' >2002/06/56</h4>
+            <h4 className='text-success' >{new Date(postDetail?.createdAt).toLocaleDateString()} </h4>
             </div>
             </div>
           </div>
@@ -62,34 +105,56 @@ function PostDetails() {
             </div>
             <h6>وصف اللوحة</h6>
             <div className="PostDetails-container-decription-text">
-                <p>WEBText messaging, or texting, is the act of composing and sending electronic messages, typically consisting of alphabetic and numeric characters, between two or more users of</p>
+                <p>{postDetail?.description} </p>
             </div>
             </div>
           </div>
-          <div className="PostDetails-container-pluse-works col-12">
-            <div className="PostDetails-container-pluse-works-container">
-              <div className="PostDetails-container-pluse-works-post">
-                <img src="https://th.bing.com/th/id/OIP.o9nN-XjPBHiokT_2O3KtfgAAAA?rs=1&pid=ImgDetMain" alt="" />
-                <div className="PostDetails-container-pluse-works-post-text">
-                  <h5>لوحة فنية تجريدية</h5>
-                  <h6>262.00 درهم</h6>
-                </div>
-                <div className="PostDetails-container-pluse-works-post-btn">
-                  <button >مشاهدة</button>
-                </div>
-              </div>
+          {postDetail?.user?.isAccountVerified && <div className="qva">
+                <h6> <span><MdVerified/></span>هذا الفنان ذو مصداقية ويقدم لوحات فنية أصلية ومميزة.</h6>
+          </div>}
+          <div className="shipping-info">
+              <h5>التسليم</h5>
+            <div className="shipping-free">
+              <h6>شحن مجاني</h6>
+              <p> التسليم في اقل من <span>4</span> ايام من الطلب</p>
             </div>
-            <div className="PostDetails-container-pluse-works-container">
-              <div className="PostDetails-container-pluse-works-post">
-                <img src="https://th.bing.com/th/id/OIP.lH0ylQ1xk3y1JIQ60L1wrAHaHa?rs=1&pid=ImgDetMain" alt="" />
-                <div className="PostDetails-container-pluse-works-post-text">
-                  <h5>tablous peinting</h5>
-                  <h6>262.00 dh</h6>
+          </div>
+             <div className="shipping-secures">
+                <div className="shipping-secures-card">
+                  <h6><span><RiSecurePaymentFill/></span> طريقة دفع آمنة لشراء اللوحات الفنية</h6>
+                  <p>يمكنك طلب اللوحة الفنية المغربية والدفع مباشرة من خلال التواصل مع الفنان في المغرب. تجربة شراء آمنة وموثوقة.</p>
                 </div>
-                <div className="PostDetails-container-pluse-works-post-btn">
-                  <button >view</button>
+                <div className="shipping-secures-card">
+                  <h6><span><GrSecure/></span> خصوصية وأمان عند شراء اللوحات الفنية</h6>
+                  <p>نضمن خصوصية بياناتك الشخصية خلال عملية التواصل مع الفنان لطلب اللوحة الفنية. احصل على عمل فني حصري.</p>
+                </div>
+                <div className="shipping-secures-card">
+                  <h6><span><GiPayMoney/></span> حماية المشتري عند شراء لوحات الفن المغربي</h6>
+                  <p>نحن نضمن حماية حقوقك عند شراء لوحات فنية من الفنانين المحليين. تجربة شراء موثوقة لأعمال فنية مميزة.</p>
                 </div>
               </div>
+              
+           <div className="PostDetails-container-pluse-works col-12">
+            <div className="PostDetails-container-pluse-works-container">
+              <p style={{textAlign:'center'}}> لوحات حديثة </p>
+              {posts?.sort(() => 0.5 - Math.random()) // ترتيب عشوائي
+            .slice(0, 5) // اختيار أول 10 منشورات
+            .map(post =>{
+                  return (
+                  <div key={post?._id} className="PostDetails-container-pluse-works-post">
+                      <img src={post?.image?.url} alt="" />
+                      <div className="PostDetails-container-pluse-works-post-text">
+                  <h5> {post?.title.length > 16 ? post?.user?.bio.substring(0, 16) + "..." : post?.title} </h5>
+                  <h6>{post?.price} درهم</h6>
+                </div>
+                <div className="PostDetails-container-pluse-works-post-btn">
+                  <Link to={'/post-details/'+post?._id}>
+                  <button >مشاهدة</button>
+                  </Link>
+                </div>
+              </div>
+                )
+              }) }
             </div>
           </div>
           <div className="bar-comander col-12">
@@ -97,12 +162,17 @@ function PostDetails() {
               <h4><FaHeart/></h4>
             </div>
             <div className="bar-comander-btn">
-              <button className='btn btn-success'>طلب</button>
+              <button onClick={()=>navigate('/تاكيد-الطلبية/'+postDetail?.user?.username.replace(/ /g, "_")+'/'+postDetail?._id)} className='btn btn-success'>طلب</button>
             </div>
           </div>
-          <div className="btn-edit-post">
-            <h6><RiEdit2Fill/></h6>
-          </div>
+          {user?._id === postDetail?.user?._id && <div className="btn-edit-post">
+            <h6 onClick={()=>navigate('/تعديل-البوست/'+postDetail?._id)}><RiEdit2Fill/></h6>
+          </div>}
+        </div>
+        <List1 posts={posts}/>
+        <div className="">
+          <h6>الروابط</h6>
+          <p>تصنيف الكلمات الرئيسية <span>لوحات حديثة</span></p>
         </div>
     </div>
   )

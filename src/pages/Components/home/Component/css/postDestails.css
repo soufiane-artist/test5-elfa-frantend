@@ -21,7 +21,19 @@
 .PostDetails-container-img img{
     width: 100%;
     max-height: 80vh;
+    animation:imgloading 2s infinite;
     clip-path: polygon(100% 0, 100% 100%, 98% 100%, 9% 98%, 0 100%, 0 0);
+}
+@keyframes imgloading{
+    0%{
+        background-color:white;
+    }
+    50%{
+        background-color: rgb(218, 218, 218);
+    }
+    100%{
+        background-color: rgb(255, 255, 255);
+    }
 }
 
 .PostDetails-container-arrow{
@@ -61,6 +73,13 @@
     font-size: 22px;
     font-weight: 700;
     text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.PostDetails-container-tablaux-details h3 span{
+    font-size: 14px;
+    text-decoration: underline;
 }
 .PostDetails-container-tablaux-details h4{
     font-size: 16px;
@@ -187,18 +206,29 @@
 .btn-edit-post{
     padding: 5px;
     position: fixed;
-    bottom: 86%;
+    top: 50%;
     right: 10px;
-    background-color: blue;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 24%;
     z-index: 2;
+    flex-direction: column;
+    gap: 6px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }   
 .btn-edit-post h6{
     color: white;
     font-size: 24px;
+    background-color: blue;
+    margin: 0;
+    width: 40px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+
 }
 .PostDetails-container-pluse-works{
     display: flex;
@@ -209,9 +239,14 @@
 
 }
 .PostDetails-container-pluse-works-container{
-    background-color: bisque;
     display: flex;
     width: 94%;
+    gap: 5px;
+    flex-direction: column;
+}
+.PostDetails-container-pluse-works-container p{
+    text-decoration: underline;
+    font-size: 22px;
 }
 .PostDetails-container-pluse-works-post{
     display: flex;
@@ -255,4 +290,95 @@
 }
 .PostDetails-container-pluse-works-post-btn button:hover{
     background-color: rgb(255, 255, 255);
+}
+.shipping-info{
+    width: 94%;
+    margin: auto;
+}
+.shipping-info h5{
+    text-decoration: underline;
+}
+.shipping-free{
+    padding: 8px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 5px;
+    border: 1px solid rgb(71, 71, 71);
+}
+.shipping-free h6{
+    font-size: 15px;
+    font-weight: 800;
+
+}
+.shipping-free p{
+    margin: 0;
+    font-size: 14px;
+}
+.shipping-free p span{
+    font-weight: 800;
+}
+.shipping-secure{
+    width: 100%;
+    border-bottom: 1px solid rgb(192, 192, 192);
+    border-top: 1px solid rgb(170, 170, 170);
+    padding: 12px 0;
+    margin-top: 12px;
+}
+.shipping-secure h6{
+    width: 94%;
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+.shipping-secures{
+    width: 94%;
+    margin: auto;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    padding: 5px 0;
+}
+.shipping-secures-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 5px;
+}
+.shipping-secures-card h6{
+    font-weight: 800;
+    margin: 0;
+}
+.shipping-secures-card p{
+    font-size: 14px;
+    width: 90%;
+    margin: auto;
+    color: rgb(110, 110, 110);
+}
+    .qva{
+        width: 94%;
+        font-size: 14px;
+        margin: auto;
+        margin-top: 10px;
+        background-color: rgb(233, 233, 233);
+    }
+    .qva h6{
+        display: flex;
+        gap: 5px;
+        font-size: 14px;
+        color: rgb(65, 65, 65);
+        padding: 5px;
+    }
+    .qva h6 span{
+        color: blue;
+    }
+.postDetails-header{
+    width: 94%;
+    margin: auto;
+    background-color: white;
+    padding: 5px;
+}
+.postDetails-header h6{
+    font-weight: 700;
+}
+.postDetails-header p{
+    font-size: 14px;
+    color: rgb(122, 122, 122);
 }

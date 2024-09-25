@@ -6,7 +6,7 @@ function Categories() {
         <div className="Categories-container">
             <div className="Categories-container-header">
                 <h3>#الفِئــــات</h3> 
-                <a href="#">See all</a>
+                <a href="/posts">See all</a>
             </div>
             <div className="Categories-container-cards">
                 <div className="Categories-container-card">
@@ -61,7 +61,7 @@ function Categories() {
                 <div className="Categories-container-card">
                     <img src="https://img.lemde.fr/2021/09/28/0/23/4714/3143/664/0/75/0/d162895_920753882-000-9nh4ug.jpg" alt="" />
                     <h6>
-                    ٱخر 
+                       ٱخر 
                     </h6>                  
                 </div>
             </div>

@@ -1,0 +1,96 @@
+
+.ChatUsers-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ChatUsers-user{
+    display: flex;
+    width: 96%;
+    align-items: center;
+    justify-content:end;
+    gap: 10px;
+    padding: 8px 8px 0px 0px;
+}
+.ChatUsers-user h6{
+    margin-right: auto;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.ChatUsers-user .ChatUsers_user_img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: white;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid rgb(63, 63, 63);
+}
+.ChatUsers_logo{
+    height: 30px;
+    margin-right: auto;
+    margin-left: 10px;
+    
+}
+.ChatUsers-user h2{
+    font-size: 15px;
+}
+.ChatUser-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+    gap: 5px;
+}
+.ChatUser-profile h5{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+.ChatUser-profile h6{
+    font-size: 14px;
+    margin: 0;
+}
+.ChatUser-profile p{
+    font-size: 13px;
+    direction: rtl;
+    color: rgb(158, 158, 158);
+    margin: 0;
+}
+.ChatUser-profile img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    background-color: rgb(146, 142, 142);
+}
+.ChatUser-input-message{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    direction: rtl;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+.ChatUser-input-message h6{
+    rotate: 180deg;
+    margin: 0;
+    font-size: 27px;
+    color: #398169;
+}
+.ChatUser-input-message textarea{
+    background-color: rgb(238, 238, 238);
+    width: 80%;
+    direction: rtl;
+    padding: 10px;
+    height: 35px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+    max-height: 100px;
+}

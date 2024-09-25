@@ -1,0 +1,46 @@
+.Notifcation{
+    background:linear-gradient(to top,rgba(3, 75, 1, 0.219),rgba(255, 255, 255, 0.836)), url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/800px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow: auto;
+    background-size: cover;
+    background-position: center;
+}
+.Notifcation-container{
+    margin-top: 60px;
+    width: 96%;
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 15px;
+}
+.Notif-container2{
+    background-color: rgba(255, 255, 255, 0.705);
+    border-radius: 5px;
+    padding: 5px;
+    direction: rtl;
+    border: 1px solid rgb(122, 122, 122);
+}
+.Notif-container2 h2{
+    font-size: 16px;
+    margin: 0;
+    text-decoration: underline;
+}
+.Notif-container2 p{
+    margin: 0;
+    color: rgb(82, 82, 82);
+}
+.Notif-container2 img{
+    height: 26px;
+    width: 26px;
+}
+.Notifcation-message{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+

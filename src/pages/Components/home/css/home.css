@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+
+*{
+    font-family: "Cairo", system-ui;
+}
 .home{
-    background: #fcfff5;
+    background: #f8f8f8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,4 +37,41 @@
     color: white;
     margin: 0;
     margin: 5px;
+}
+.ogin-form-bottom-home{
+    position: fixed;
+    background: white;
+    direction:ltr;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    bottom: 8px;
+    animation: login 2s 2s ;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.ogin-form-bottom-home button{
+    font-size: 11px;
+    font-weight: 700;
+    background-color: #398169;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+.ogin-form-bottom-home h5{
+    font-size: 11px;
+    direction: rtl;
+    font-size: 800;
+    margin: 0;
+}
+@keyframes login{
+    0%{
+          bottom: 50%;
+    }
+}
+#header{
+    z-index: 3;
 }

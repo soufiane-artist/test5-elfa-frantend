@@ -1,0 +1,75 @@
+.dawra7-container{
+    margin-top: 50px;
+}
+.dawra7 video{
+    width: 100%;
+}
+.dawra7-container-text{
+    direction: rtl;
+    width: 94%;
+    margin: auto;
+    margin-top: 15px;
+}
+.dawra7-container-text h2{
+    font-weight: 700;
+}
+.dawra7-container-text p{
+    color: rgb(87, 87, 87);
+}
+.dawra7-container-text p span{
+    color: blue;
+    text-decoration: underline;
+}
+.dawra7-container-text h5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.dawra7-container-text h5 span{
+    margin: 0;
+    color: rgb(255, 187, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dawra7-container-text #price{
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.dawra7-container-text #price span{
+    font-size: 15px;
+    color: rgb(112, 112, 112);
+    text-decoration: line-through;
+}
+.dawra7-container-text h4{
+    font-size: 14px;
+    color: red;
+    display: flex;
+    gap: 10px;
+}
+.dawra7-container-text-buy{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.dawra7-container-text-buy button{
+    width: 100%;
+}
+.dawra7-container-text-buy p{
+    font-size: 14px;
+}
+.dawra7-container-text-buy #header{
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(156, 156, 156);
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.dawra7-container-text-buy #header span{
+    font-weight: 700;
+    color: black;
+}

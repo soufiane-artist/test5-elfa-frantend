@@ -1,0 +1,77 @@
+.Dawarate-container{
+    margin-top: 50px;
+    direction: rtl;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.Dawarate-container hr{
+    width: 100%;
+}
+.dawarate-card-video{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    margin: auto;
+}
+.dawarate-card-video:hover{
+    cursor: pointer;
+    background-color: rgb(240, 240, 240);
+}
+.Dawarate-container img{
+    height: 110px;
+    width: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+.dawarate-card-video-reveiws p {
+    direction:rtl;
+}
+
+.dawarate-card-video-text h5{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+.dawarate-card-video-text h6{
+    font-size: 14px;
+    color: rgb(95, 95, 95);
+    margin: 0;
+}
+.dawarate-card-video-reveiws h5{
+    font-size: 13px;
+    margin: 0;
+}
+.dawarate-card-video-reveiws h5 span{
+    color: rgb(255, 174, 0);
+}
+.dawarate-card-video-reveiws p {
+    font-size: 13px;
+    color: rgb(95, 95, 95);
+    margin: 0;
+}
+.dawarate-card-video-reveiws h6{
+    font-weight: 900;
+    direction:ltr;
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    margin: 0;
+}
+.dawarate-card-video-reveiws h6 span{
+    text-decoration: line-through;
+}
+.sold-price-dawarte{
+    background-color: yellow;
+    margin-bottom: 12px;
+    padding: 7px 0;
+}
+.sold-price-dawarte h6{
+    text-align: center;
+    margin: 0;
+}
+.sold-price-dawarte h6 span{
+    font-weight: 700;
+}

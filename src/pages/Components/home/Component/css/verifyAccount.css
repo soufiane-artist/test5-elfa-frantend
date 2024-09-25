@@ -1,0 +1,106 @@
+
+.VerifyAccount-container{
+    margin-top: 55px;
+}
+.VerifyAccount-sold{
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(124, 124, 124);
+    border-top: 1px solid rgb(124, 124, 124);
+}
+.VerifyAccount-sold h6{
+    width: 80%;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    gap: 10px;
+}
+.VerifyAccount-sold h6 span{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.VerifyAccount-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.VerifyAccount-text h6{
+    background-color: rgb(240, 240, 240);
+    margin-top: 26px;
+    width: 90%;
+    padding: 5px;
+    font-size: 14px;
+    direction: rtl;
+    border-radius: 5px;
+    border: 1px solid rgb(99, 99, 99);
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    direction: rtl;
+    gap: 6px;
+    margin-top: 15px;
+}
+.form-group input{
+    height: 45px;
+    direction: rtl;
+    padding: 0px 5px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px ;
+    border: none;
+
+}
+.form-group textarea{
+    background-color: rgb(240, 240, 240);
+}
+.profile-verfiy-account{
+    background-color: rgb(255, 255, 255);
+    direction: rtl;
+    width: 94%;
+    margin: auto;
+    border-radius: 12px;
+    border: 1px solid rgb(104, 104, 104);
+    display: flex;
+    gap: 10px;
+    padding: 10px ;
+    position: relative;
+    margin-top: 5px;
+    box-shadow: rgba(134, 134, 134, 0.219) 0px 5px 15px;
+
+}
+.profile-verfiy-account h2{
+    position: absolute;
+    bottom: -4px;
+    background-color: white;
+    height: fit-content;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.profile-verfiy-account img{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 1px solid rgb(107, 107, 107);
+    background-color: white;
+}
+.profile-verfiy-account h5{
+    margin: 0;
+    font-weight: 700;
+}
+.profile-verfiy-account h6{
+    margin: 0;
+    color: rgb(73, 73, 73);
+}

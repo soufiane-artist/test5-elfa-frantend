@@ -1,0 +1,92 @@
+.Sidibar {
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.836);
+    backdrop-filter: blur(15px);
+    z-index: 3;
+    position: fixed;
+    top: 0;
+    width: 80%;
+    right: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: transform 0.3s ease-in-out;
+  }
+.Sidibar-container{
+    position: relative;
+    height: 100%;
+}
+.Sidibar-profile{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    gap: 10px;
+    cursor: default;
+}
+.Sidibar-profile img{
+    height: 50px;
+    width: 50px;    
+    border-radius: 50%;
+    background-color: rgb(241, 241, 241);
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid rgb(112, 112, 112);
+    cursor: pointer;
+}
+.sidiabar-prof-text{
+    display: flex;
+    flex-direction: column;
+}
+.sidiabar-prof-text h4 {
+    font-size: 18px;
+    margin: 0;
+}
+ 
+.sidiabar-prof-text h6{
+    margin: 0;
+}
+.Sidibar-container hr{
+    width: 100%;
+}
+.Sidibar-top{
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.Sidibar-top h4{
+    font-size: 18px;
+    padding: 5px;
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.Sidibar-top h4:hover{
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+.Sidibar-bottom{
+    position: absolute;
+    bottom:10px;
+    width: 100%;
+}
+.Sidibar-bottom h4{
+    font-size: 18px;
+    padding: 5px;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(70, 70, 70);
+    width: 100%;
+    color: white;
+}
+.sidibar-btn-login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+.sidibar-btn-login h2{
+    font-size: 16px;
+    text-decoration: underline;
+}
